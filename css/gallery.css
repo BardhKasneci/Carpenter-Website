@@ -48,8 +48,61 @@
     font-weight: 400;
 }
 
+.gallery-section{
+    margin-top: 50px;
+    padding: 0px 10%;
+}
+
+.gallery-section h1{
+    font-size: 46px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.gallery-section p{
+    font-size: 22px;
+    color: #a4a7a1;
+    margin-bottom: 70px;
+}
+
+.filter-btns{
+    padding-bottom: 20px ;
+    border-bottom: 1px solid #ff5f1f70;
+}
+
+.filter-btns .active{
+    background-color: #ff5f1f;
+    color: white;
+}
+
+.filter-btns button{
+    font-weight: 500;
+    background-color: #ff48000f;
+    font-size: 18px;
+    padding: 12px 25px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 25px;
+}
+
+.gallery-photos{
+    display: grid;
+    grid-template-columns: repeat(3, 31%);
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.gallery-photos img{
+    max-height: 400px;
+    margin-bottom: 50px;
+    width: 100%;
+    border-radius: 15px;
+}
+
 .footer-top{
     margin-top: 40px;
+    border-top: 1px solid rgb(232, 231, 231);
     display: flex;
     justify-content: space-evenly;
     padding: 50px 30px;
