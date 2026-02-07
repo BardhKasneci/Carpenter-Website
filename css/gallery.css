@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #fff;
+    position: sticky;
+    border: 1px solid rgb(220, 220, 220);
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img{
+    width: 80px;
+    height: 60px;
+    margin: 0;
+}
+
+.nav-links ul{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #1b263b;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.nav-links a:hover{
+    color: #8b5e3c;
+}
+
+.phone{
+    color: #1b263b;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.footer-top{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 30px;
+    border-bottom: 1px solid rgb(232, 231, 231);
+}
+
+.left-section{
+    width: 30%;
+    margin-top: 0;
+}
+
+
+.logo{
+    width: 80px;
+    height: 60px;
+    margin: 0;
+}
+
+
+.left-section p, .right-section, p{
+    margin-top: 10px;
+    color: #b0b8a8;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.social{
+    display: flex;
+    gap: 20px;
+}
+
+.social i{
+    background-color: #eeeeee;
+    color: black;
+    width: 50px;
+    height: 50px;
+    padding-top: 13px;
+    padding-left: 2px;
+    font-size: 22px;
+    border-radius: 50%;
+}
+
+.middle-section{
+    width: 30%;
+    padding-left: 8%;
+}
+
+.middle-section h3 , .right-section, h3{
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.middle-section ul li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.middle-section ul li a{
+    text-decoration: none;
+    color: #b0b8a8;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.right-section{
+    width: 30%;
+    margin: 0;
+}
+.news{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.right-section input{
+    width: 300px;
+    padding: 16px 12px;
+    border-radius: 10px;
+    border: 1px solid rgb(219, 219, 219);
+}
+
+.right-section a{
+    background-color: #ff5f1f;
+    padding: 10px 12px;
+    border-radius: 10px;
+}
+.right-section i{
+    color: white;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+}
+
+.footer-bottom p{
+    margin: 0;
+}
+
+.policies{
+    display: flex;
+    gap: 30px;
+    color: #b0b8a8;
+    align-items: center;
+}
+
