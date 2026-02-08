@@ -26,8 +26,74 @@
         </div>
     </nav>
 
-
- <footer>
+    <section class="contact-section">
+        <div class="contact-detail">
+            <h1>Let's build something together.</h1>
+            <p>From custom cabinetry to architectual millwork, we bring heirloom quality craftsmanship to every project.</p>
+            <div class="detail">
+                <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="detail-text">
+                    <h2>Office & Workshop</h2>
+                    <p>Rr Ismail Thachi Nr4, Sofali</p>
+                </div> 
+            </div>
+             <div class="detail">
+                <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="detail-text">
+                    <h2>Direct Line</h2>
+                    <p>(+383) 44-127-820</p>
+                </div>
+            </div>
+             <div class="detail">
+                <div class="icon">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="detail-text">
+                      <h2>Business Hours</h2>
+                    <p>Monday - Friday: 8am-6pm</p>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2933.636227591115!2d21.192028693168236!3d42.66906359999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDLCsDQwJzA4LjkiTiAyMcKwMTEnMzguNyJF!5e0!3m2!1sen!2s!4v1770496530945!5m2!1sen!2s" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="form-section">
+            <form enctype="multipart/form-data">
+                <div class="name-label">
+                    <label for="full">Full Name</label>
+                    <label for="email">Email Address</label>
+                </div>
+                <div class="name">
+                    <input id="full" type="text" placeholder="Full Name" required>
+                    <input id="email" type="email" placeholder="user@example.com" required>
+                </div>
+                <label id="ctg">Project Category</label>
+                <select>
+                    <option>Select a Service</option>
+                    <option>Custom Cabinetry</option>
+                    <option>Custom Kitchen</option>
+                    <option>Custom Bedroom</option>
+                </select>
+                 <div class="project-details">
+                    <label for="desc" class="detail-label">Project Details</label>
+                    <div class="detail-container">
+                        <textarea id="desc" class="detail-input" placeholder="Write details about your vision."></textarea>
+                    </div>
+                </div>
+                <label id="photo">Reference Photos</label>
+                <div class="file-input">
+                    <input id="files" type="file" accept="image/png, image/jpeg, image/webp" capture="environment" hidden>
+                    <label for="files" id="upload-btn" class="custom-button"><i class="fa-solid fa-cloud-arrow-up"></i></label>
+                    <p> Click to upload a image</p>
+                    <p style="font-size: 14px;">PNG, JPG or WEBP (max. 10MB)</p>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer>
         <div class="footer-top">
             <div class="left-section">
                 <img src="images/Untitled design.png" class="logo" alt="Logo">
