@@ -206,12 +206,22 @@
 }
 
 .about-image{
-    padding: 20px 0px;
-    height: 100%;
+    min-height: auto;
     width: 50%;
     border-radius: 16px;
-    object-fit: cover;
-    background: url(https://i.pinimg.com/1200x/fd/9e/17/fd9e17611fe11d0a220f7f609300b676.jpg);
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.about-image img{
+    width: 100%;
+    border-radius: 16px;
+    transition: transform 0.5s, filter 0.3s;
+}
+
+.about-image img:hover{
+    transform: scale(1.1);
+    filter: brightness(0.8)
 }
 
 .gallery-section{
@@ -268,6 +278,8 @@
 .card-image{
     height: 200px;
     width: 400px;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .card-image img{
@@ -275,6 +287,12 @@
     height: 200px;
     object-fit: cover;
     border-radius: 15px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.card-image img:hover{
+    transform: scale(1.05);
+    filter: brightness(0.8)
 }
 
 
