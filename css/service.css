@@ -56,6 +56,7 @@
     text-align: center;
     justify-content: center;
     padding: 0 8%;
+    margin-top: 50px;
     margin-bottom: 100px;
 }
 
@@ -106,6 +107,38 @@
     line-height: 1.5;
     color: #ae5e09;
     font-size: 20px;
+}
+
+.idea-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.idea-section h1{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.idea-section p{
+    width: 50%;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.idea-section a{
+    text-decoration: none;
+    padding: 15px 26px;
+    background-color: #ff5a19;
+    color: white;
+    font-weight: 500;
+    border-radius: 6px;
 }
 
 .footer-top{
