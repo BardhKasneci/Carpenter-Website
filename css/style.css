@@ -244,7 +244,7 @@
     color: #a4a7a1;
     font-size: 22px;
 }
-.buttons a{
+.buttons button{
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -255,15 +255,23 @@
 .buttons i{
     font-size: 22px;
 }
-.gallery{
-    display: grid;
-    grid-template-columns: repeat(3, 31%);
-    justify-content: space-between;
+
+.gallery-wrapper {
+    overflow: hidden; 
     width: 100%;
+}
+
+.gallery{
+    display: flex;
+    gap: 20px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scrollbar-width: none;
 }
 
 .gallery-card{
     width: 400px;
+    flex-shrink: 0;
     height: auto;
     border-radius: 15px;
 }
