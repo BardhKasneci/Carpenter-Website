@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/gallery.css">
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar">
+   <nav class="navbar">
         <div class="logo">
             <img src="images/Untitled design.png" alt="Logo">
         </div>
@@ -17,7 +23,8 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="service.html">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="process.html">Process</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>              
             </ul>
         </div>
@@ -25,59 +32,154 @@
             <a class="phone" href="Phone">044-127-820</a>
         </div>
     </nav>
-    <section class="gallery-section">
-        <h1>Our Craftsmanship</h1>
-        <p>A curated collection of bespoke carpentry and premium woodworking projects <br> tailored for modern living spaces.</p>
-        <div class="filter-btns">
-            <button class="active">All Project</button>
-            <button>Kitchen</button>
-            <button>Living Room</button>
-            <button>Bedroom</button>
-        </div>
-        <div class="gallery-photos">
-            <img src="images/5912db712369675aebba5b713025a1f2.jpg">
-            <img src="images/5912db712369675aebba5b713025a1f2.jpg">
-            <img src="images/5912db712369675aebba5b713025a1f2.jpg">  
-            <img src="images/5912db712369675aebba5b713025a1f2.jpg">           
-            <img src="images/5912db712369675aebba5b713025a1f2.jpg">           
-            <img src="images/5912db712369675aebba5b713025a1f2.jpg">                               
-        </div>
+      <section class="service-section">
+            <div class="service-header">
+                <span>Our Work</span>
+                <h1>Selected Projects.</h1>
+                <p>Explore our collection of bespoke cabinetry and structural woodwork. Each piece represents our commitment to the intersection of raw timber beauty and architectural precision.</p>  
+            </div>      
     </section>
-<footer>
-        <div class="footer-top">
-            <div class="left-section">
-                <img src="images/Untitled design.png" class="logo" alt="Logo">
-                <p>Building a Legacy of quality craftsmanship. We take ordinary living spaces and create something unique.</p>
-                <div class="social">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-tiktok"></i>
-                    <i class="fa-brands fa-google"></i>
-                </div>
-            </div>
-            <div class="middle-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a>Services</a></li>
-                    <li><a>Gallery</a></li>
-                    <li><a>Contact Us</a></li>
-               </ul>
-            </div>
-            <div class="right-section">
-                <h3>Newsletter</h3>
-                <p>Get notified on the latest updates & projects.</p>
-                <div class="news">
-                    <input placeholder="Your Email">
-                    <a><i class="fa-solid fa-paper-plane"></i></a>
-                </div>
+  <main class="portfolio-section">
+        <div class="portofolio-container">
+            
+            <nav class="filter-nav">
+                <a href="#" class="nav-item active">All Projects</a>
+                <a href="#" class="nav-item">Kitchens</a>
+                <a href="#" class="nav-item">Living Spaces</a>
+                <a href="#" class="nav-item">Outdoor</a>
+                <a href="#" class="nav-item">Restoration</a>
+            </nav>
+
+            <div class="portfolio-grid">
+                
+                <a href="#" class="project-card grid-col-2">
+                    <div class="image-wrapper img-wide-tall">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1000&q=80" alt="The Cotswold Kitchen">
+                    </div>
+                    <div class="card-content">
+                        <div class="title-row">
+                            <h3>The Cotswold Kitchen</h3>
+                            <span class="arrow">→</span>
+                        </div>
+                        <p class="tags">WHITE OAK • DOVETAIL JOINERY • MINIMALIST</p>
+                    </div>
+                </a>
+
+                <a href="#" class="project-card margin-top-large">
+                    <div class="image-wrapper img-portrait">
+                        <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=600&q=80" alt="Library Wall">
+                    </div>
+                    <div class="card-content">
+                        <div class="title-row">
+                            <h3>Library Wall</h3>
+                        </div>
+                        <p class="tags">BLACK WALNUT • INVISIBLE MOUNTING</p>
+                    </div>
+                </a>
+
+                <a href="#" class="project-card">
+                    <div class="image-wrapper img-square">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80" alt="Manor Staircase">
+                    </div>
+                    <div class="card-content">
+                        <div class="title-row">
+                            <h3>Manor Staircase</h3>
+                        </div>
+                        <p class="tags">MAHOGANY • PERIOD ACCURATE</p>
+                    </div>
+                </a>
+
+                <a href="#" class="project-card grid-col-2">
+                    <div class="image-wrapper img-wide-short">
+                        <img src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?auto=format&fit=crop&w=1000&q=80" alt="The Zenith Pavilion">
+                    </div>
+                    <div class="card-content">
+                        <div class="title-row">
+                            <h3>The Zenith Pavilion</h3>
+                            <span class="arrow">→</span>
+                        </div>
+                        <p class="tags">WESTERN RED CEDAR • MORTISE & TENON</p>
+                    </div>
+                </a>
+
+                <a href="#" class="project-card">
+                    <div class="image-wrapper img-tall">
+                        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=600&q=80" alt="Estate Pantry">
+                    </div>
+                    <div class="card-content">
+                        <div class="title-row">
+                            <h3>Estate Pantry</h3>
+                        </div>
+                        <p class="tags">SMOKED OAK • SOLID BRASS</p>
+                    </div>
+                </a>
+
+                <a href="#" class="project-card grid-col-2-end">
+                    <div class="image-wrapper img-landscape">
+                        <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80" alt="Ash Credenza">
+                    </div>
+                    <div class="card-content">
+                        <div class="title-row">
+                            <h3>Ash Credenza</h3>
+                        </div>
+                        <p class="tags">EUROPEAN ASH • SHADOW GAP</p>
+                    </div>
+                </a>
+
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy Bardh & Lis All rights reserved</p>
-            <div class="policies">
-                <a>Privacy Policy</a>
-                <a>Terms of Service</a>
+    </main>
+    <section class="cta-section">
+        <div class="cta-container">
+            
+            <div class="cta-content">
+                <h1 class="cta-heading">Have a vision for your space?</h1>
+                <p class="cta-text">Let's discuss how heirloom-quality woodwork can transform your home. We are currently accepting commissions for 2024.</p>
             </div>
+            
+            <div class="cta-actions">
+                <a href="#" class="btn btn-primary">START A CONSULTATION</a>
+                <a href="#" class="btn btn-secondary">OUR PROCESS</a>
+            </div>
+            
+        </div>
+    </section>    
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <div class="footer-col brand-col">
+                <h2 class="brand-title">BARDH & LIS</h2>
+                <p class="brand-tagline">Crafting timeless timber solutions for modern living since 1984.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="col-heading">SERVICES</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Custom Cabinetry</a></li>
+                    <li><a href="#">Furniture Restoration</a></li>
+                    <li><a href="#">Structural Woodwork</a></li>
+                    <li><a href="#">Material Sourcing</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="col-heading">CONTACT</h3>
+                <address class="contact-info">
+                    <p>Sofali, Prishtina<br>Ismail Thaci Nr 4</p>
+                    <p><a href="mailto:hello@heirloomjoinery.com">bardh&lis@gmail.com</a></p>
+                    <p><a href="tel:+15552345678">+383 44 603 320</a></p>
+                </address>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="col-heading">FOLLOW</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+
         </div>
     </footer>
 </body>

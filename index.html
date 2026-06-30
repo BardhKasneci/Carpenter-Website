@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
@@ -15,9 +21,10 @@
         </div>
         <div class="nav-links">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="service.html">Services</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="process.html">Process</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>              
             </ul>
         </div>
@@ -30,8 +37,9 @@
         <div class="hero-overlay"></div>
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Mastering the Art of<br><span>Woodworking</span></h1>
-                <p style="color: white;">Bringing warmth, character, and nature indoors. We specialize in custom pieces that make your house feel like home.</p>
+                <span>Established</span>
+                <h1>Measured Twice, Built Once.</h1>
+                <p>Bespoke architectural joinery and custom furniture crafted with the surgical precision of modern engineering and the soul of traditional heritage.</p>
                 <div class="hero-buttons">
                     <a href="#" class="btn-primary">Read More</a>
                     <a href="#" class="btn-secondary">View Our Gallery</a>
@@ -41,28 +49,69 @@
     </section>
     <section class="about">
         <div class="about-text">
-            <h4>The Craftman's touch</h4>
-            <h1>Our Heritage and <br> Precision Sourcing</h1>
-            <p>With Decades of experience we source sustainable timber to create heirloom quality pieces that blend traditional techniques with moder design. Every plank is hand selected for its grain and character.</p>
-            <div class="about-skills">
-                <div class="skill-card">
-                    <i class="fa-solid fa-leaf"></i>
-                    <div class="skill-text">
-                        <h3>Sustainable</h3>
-                        <p>Responsibly harvested hardwoods</p>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
-                    <div class="skill-text">
-                        <h3>Hand-Finished</h3>
-                        <p>Traditionally joinery techniques</p>
-                    </div>
-                </div>
-            </div>
+            <h1>Architectural Precision meets Raw Material.</h1>
+            <p>We believe that joinery is the silent soul of a space. It’s not just about storage or structure; it’s about the tactile experience of a grain, the perfect weighted snap of a cabinet door, and the durability that spans generations. <br><br> Our workshop combines 18th-century hand-tools with state-of-the-art CNC technology to ensure that every "cut sheet" is executed to a fraction of a millimeter.</p>
         </div>
         <div class="about-image">   
             <img src="images/fd9e17611fe11d0a220f7f609300b676.jpg">       
+        </div>
+    </section>
+
+    <section class="craft-section">
+        <div class="craft-container">
+            
+            <div class="section-header">
+                <div class="header-left">
+                    <span class="subtitle">OUR CRAFT</span>
+                    <h2 class="title">Expertise in Timber.</h2>
+                </div>
+                <div class="header-right">
+                    <a href="#" class="explore-link">Explore All Services</a>
+                </div>
+            </div>
+
+            <div class="services-grid">
+                
+                <a href="#" class="service-card">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80" alt="Custom Cabinetry">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title-row">
+                            <h3>Custom Cabinetry</h3>
+                            <span class="arrow-icon">↗</span>
+                        </div>
+                        <p>Precision-fitted storage solutions for modern interiors.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=600&q=80" alt="Furniture Restoration">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title-row">
+                            <h3>Furniture Restoration</h3>
+                            <span class="arrow-icon">↗</span>
+                        </div>
+                        <p>Honoring heritage by breathing new life into old timber.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Structural Woodwork">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title-row">
+                            <h3>Structural Woodwork</h3>
+                            <span class="arrow-icon">↗</span>
+                        </div>
+                        <p>Exposed beams and timber frames that define a home.</p>
+                    </div>
+                </a>
+
+            </div>
         </div>
     </section>
     <section class="gallery-section">
@@ -126,73 +175,52 @@
             </div>
         </div>
     </section>
-    <section class="service">
-        <div class="service-container">
-            <h1>Our Specialized Services</h1>
-            <p>From consultation to installation, we provide end-to-end craftsmanship for your home</p>
-            <div class="card-container">
-                <div class="service-card">
-                    <div>
-                        <i id="icon" class="fa-solid fa-utensils"></i>
-                        <h3>Kitchen Design & Cabinetry</h3>
-                        <p>Transform the heart of your home with custom-built cabinets and functional kitchen islands tailored to your unique cooking habits and storage requirements.</p>
-                        <a href="#">Read More<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div>
-                        <i id="icon" class="fa-solid fa-couch"></i>                      
-                        <h3>Living Room Solutions</h3>
-                        <p>Elevate your shared spaces with high-quality timber furniture and architectural structural features designed for modern living.</p>
-                        <a href="#">Read More<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                  <div class="service-card">
-                    <div>
-                        <i id="icon" class="fa-solid fa-bed"></i>
-                        <h3>Bedroom & Wardrobe Design</h3>
-                        <p>Create a personal sanctuary with masterful woodwork, including custom-fit wardrobes, handcrafted bed frames, and integrated storage solutions.</p>
-                        <a href="#">Read More<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>           
+    
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2 class="cta-heading">Start your legacy project.</h2>
+            <p class="cta-subtext">
+                Whether it's a single piece of furniture or a full structural renovation, our master craftsmen are ready to bring your vision to life with heirloom quality.
+            </p>
+            <a href="#" class="cta-button">Book a Consultation</a>
         </div>
     </section>
-    <footer>
-        <div class="footer-top">
-            <div class="left-section">
-                <img src="images/Untitled design.png" class="logo" alt="Logo">
-                <p>Building a Legacy of quality craftsmanship. We take ordinary living spaces and create something unique.</p>
-                <div class="social">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-tiktok"></i>
-                    <i class="fa-brands fa-google"></i>
-                </div>
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <div class="footer-col brand-col">
+                <h2 class="brand-title">BARDH & LIS</h2>
+                <p class="brand-tagline">Crafting timeless timber solutions for modern living since 1984.</p>
             </div>
-            <div class="middle-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a>Services</a></li>
-                    <li><a>Gallery</a></li>
-                    <li><a>Contact Us</a></li>
-               </ul>
+
+            <div class="footer-col">
+                <h3 class="col-heading">SERVICES</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Custom Cabinetry</a></li>
+                    <li><a href="#">Furniture Restoration</a></li>
+                    <li><a href="#">Structural Woodwork</a></li>
+                    <li><a href="#">Material Sourcing</a></li>
+                </ul>
             </div>
-            <div class="right-section">
-                <h3>Newsletter</h3>
-                <p>Get notified on the latest updates & projects.</p>
-                <div class="news">
-                    <input placeholder="Your Email">
-                    <a><i class="fa-solid fa-paper-plane"></i></a>
-                </div>
+
+            <div class="footer-col">
+                <h3 class="col-heading">CONTACT</h3>
+                <address class="contact-info">
+                    <p>Sofali, Prishtina<br>Ismail Thaci Nr 4</p>
+                    <p><a href="mailto:hello@heirloomjoinery.com">bardh&lis@gmail.com</a></p>
+                    <p><a href="tel:+15552345678">+383 44 603 320</a></p>
+                </address>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy Bardh & Lis All rights reserved</p>
-            <div class="policies">
-                <a>Privacy Policy</a>
-                <a>Terms of Service</a>
+
+            <div class="footer-col">
+                <h3 class="col-heading">FOLLOW</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
             </div>
+
         </div>
     </footer>
     <script src="js/gallery.js"></script>

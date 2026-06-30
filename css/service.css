@@ -2,7 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: var(--white);
+}
+
+:root{
+    --primary-color: #B5835A;
+    --secondary-color: #1A1A1A;
+    --white:#F9F7F5;
+    --body-font: "Manrope", sans-serif;
+    --header-font: "Playfair Display", serif;
 }
 
 .navbar{
@@ -31,228 +42,141 @@
 
 .nav-links a{
     text-decoration: none;
-    color: #1b263b;
+    color: var(--secondary-color);
+    font-family: var(--body-font);
     font-weight: 500;
-    font-size: 1.2rem;
-    transition: color 0.3s;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
-.nav-links a:hover{
-    color: #8b5e3c;
+.nav-links a:hover, .nav-links a.active{
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding-bottom: 5px;
 }
 
+
 .phone{
+    font-family: var(--body-font);
     color: #1b263b;
     text-decoration: none;
     font-weight: 400;
 }
 
+.footer {
+    background-color: var(--secondary-color); 
+    color: #cccccc; 
+    padding: 60px 40px;
+    border-top: 0.01rem solid var(--white); 
+    line-height: 1.6;
+}
 
-.service-section{
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 0 8%;
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-
-.service-section h1{
-    font-size: 46px;
-    font-weight: 800;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.text{
-    width: 60%;
-    line-height: 1.5;
-    color: #ae5e09;
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.service-grid{
-    margin-top: 30px;
-    width: 90%;
-    display: grid;
-    gap: 6%;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.service-card{
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.service-image{
-    width: 100%;
-    height: 400px;
-    border-radius: 15px;
-}
-
-.service-text h2{
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-weight: 800;
-    font-size: 30px;
-    text-align: left;
-}
-
-.service-text p{
-    text-align: left;
-    line-height: 1.5;
-    color: #ae5e09;
-    font-size: 20px;
-}
-
-.idea-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-
-.idea-section h1{
-    font-size: 40px;
-    font-weight: 800;
-    margin-bottom: 10px;
-}
-
-.idea-section p{
-    width: 50%;
-    text-align: center;
-    line-height: 1.4;
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.idea-section a{
-    text-decoration: none;
-    padding: 15px 26px;
-    background-color: #ff5a19;
-    color: white;
-    font-weight: 500;
-    border-radius: 6px;
-}
-
-.footer-top{
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 50px 30px;
-    border-bottom: 1px solid rgb(232, 231, 231);
-}
-
-.left-section{
-    width: 30%;
-    margin-top: 0;
-}
-
-
-.logo{
-    width: 80px;
-    height: 60px;
-    margin: 0;
-}
-
-
-.left-section p, .right-section, p{
-    margin-top: 10px;
-    color: #b0b8a8;
-    font-size: 20px;
-    margin-bottom: 20px;
-    font-weight: 400;
-}
-
-.social{
-    display: flex;
-    gap: 20px;
-}
-
-.social i{
-    background-color: #eeeeee;
-    color: black;
-    width: 50px;
-    height: 50px;
-    padding-top: 13px;
-    padding-left: 2px;
-    font-size: 22px;
-    border-radius: 50%;
-    transition: background 0.3s ease;
-}
-
-.social i:hover{
-    background-color: #bdbdbd;
-}
-
-.middle-section{
-    width: 30%;
-    padding-left: 8%;
-}
-
-.middle-section h3 , .right-section, h3{
-    color: black;
-    font-weight: bold;
-    margin-bottom: 20px;
-    font-size: 24px;
-}
-
-.middle-section ul li{
-    list-style: none;
-    margin-bottom: 20px;
-}
-.middle-section ul li a{
-    text-decoration: none;
-    color: #b0b8a8;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.right-section{
-    width: 30%;
-    margin: 0;
-}
-.news{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-.right-section input{
-    width: 300px;
-    padding: 16px 12px;
-    border-radius: 10px;
-    border: 1px solid rgb(219, 219, 219);
-}
-
-.right-section a{
-    background-color: #ff5f1f;
-    padding: 10px 12px;
-    border-radius: 10px;
-}
-.right-section i{
-    color: white;
-}
-.footer-bottom{
-    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    padding: 30px 40px;
+    gap: 40px;
 }
 
-.footer-bottom p{
-    margin: 0;
+.footer-col {
+    flex: 1;
+    min-width: 200px; 
 }
 
-.policies{
-    display: flex;
-    gap: 30px;
-    color: #b0b8a8;
-    align-items: center;
+.brand-col {
+    flex: 1.5; 
+    padding-right: 20px;
 }
 
+.brand-title {
+    font-family: var(--header-font);
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.brand-tagline {
+    font-family: var(--body-font);
+    font-size: 0.95rem;
+    color: #999999;
+    max-width: 260px;
+}
+
+.col-heading {
+    font-family: var(--body-font);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary-color); 
+    margin-bottom: 25px;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 15px;
+}
+
+.footer-links a, 
+.contact-info a {
+    font-family: var(--body-font);
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover, 
+.contact-info a:hover {
+    color: #ffffff; 
+}
+
+.contact-info {
+    font-style: normal;
+}
+
+.contact-info p {
+    font-family: var(--body-font);
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+    .cta-container {
+        flex-direction: column;
+        align-items: flex-start; /* Aligns everything nicely to the left on smaller screens */
+        gap: 32px;
+    }
+    
+    .cta-heading {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .cta-section {
+        padding: 60px 20px;
+    }
+
+    .cta-heading {
+        font-size: 2.2rem;
+    }
+    
+    .cta-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn {
+        width: 100%; /* Makes buttons full width on small mobile screens */
+    }
+}
