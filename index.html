@@ -114,63 +114,41 @@
             </div>
         </div>
     </section>
-    <section class="gallery-section">
-        <div class="gallery-text">
-            <div>
-                <h1>Featured Work</h1>
-                <p>Our latest custom creations for clients.</p>
-            </div>
-            <div class="buttons">
-                <button id="prevBtn"><i class="fa-solid fa-arrow-left"></i></button>
-                <button id="nextBtn"><i class="fa-solid fa-arrow-right"></i></button>            
+    <section class="slider-section">
+        <div class="left-col">
+            <h2>Built for those who value detail.</h2>
+            <div class="slider-nav">
+                <button class="nav-btn" id="prevBtn" aria-label="Previous testimonial">
+                    <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                </button>
+                <button class="nav-btn" id="nextBtn" aria-label="Next testimonial">
+                    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
             </div>
         </div>
-        <div class="gallery-wrapper">
-            <div class="gallery" id="gallery">
-                <div class="gallery-card">
-                    <div class="card-image">     
-                        <img src="images/5912db712369675aebba5b713025a1f2.jpg" alt="Photo">
-                    </div>
-                    <div class="card-text">
-                        <h2>Handcrafted Table</h2>
-                        <p>Custom live-edge design for a private residence</p>
-                    </div> 
+
+        <div class="right-col">
+            <div class="slide active">
+                <p class="quote">"Heirloom Joinery transformed our kitchen into a piece of art. The way the wood grain flows across the drawer fronts is something I admire every single morning. Their precision is unmatched."</p>
+                <div class="author-meta">
+                    <span class="line"></span>
+                    <div class="author-info">Eleanor Vance, Architectural Designer</div>
                 </div>
-                <div class="gallery-card">
-                    <div class="card-image">     
-                        <img src="images/5912db712369675aebba5b713025a1f2.jpg" alt="Photo">
-                    </div>
-                    <div class="card-text">
-                        <h2>Handcrafted Table</h2>
-                        <p>Custom live-edge design for a private residence</p>
-                    </div> 
+            </div>
+
+            <div class="slide">
+                <p class="quote">"The attention to detail during the initial blueprint framing phase left no room for error. Working with a team that values flawless alignment as much as we do is a rare find."</p>
+                <div class="author-meta">
+                    <span class="line"></span>
+                    <div class="author-info">Julian Brooks, Lead Architect</div>
                 </div>
-                <div class="gallery-card">
-                    <div class="card-image">     
-                        <img src="images/5912db712369675aebba5b713025a1f2.jpg" alt="Photo">
-                    </div>
-                    <div class="card-text">
-                        <h2>Handcrafted Table</h2>
-                        <p>Custom live-edge design for a private residence</p>
-                    </div> 
-                </div>
-                <div class="gallery-card">
-                    <div class="card-image">     
-                        <img src="images/5912db712369675aebba5b713025a1f2.jpg" alt="Photo">
-                    </div>
-                    <div class="card-text">
-                        <h2>Handcrafted Table</h2>
-                        <p>Custom live-edge design for a private residence</p>
-                    </div> 
-                </div>
-                <div class="gallery-card">
-                    <div class="card-image">     
-                        <img src="images/5912db712369675aebba5b713025a1f2.jpg" alt="Photo">
-                    </div>
-                    <div class="card-text">
-                        <h2>Handcrafted Table</h2>
-                        <p>Custom live-edge design for a private residence</p>
-                    </div> 
+            </div>
+
+            <div class="slide">
+                <p class="quote">"Every cabinet corner, hidden joint, and integrated casing feels entirely tailor-made. They didn't just build furniture; they elevated our entire architectural space."</p>
+                <div class="author-meta">
+                    <span class="line"></span>
+                    <div class="author-info">Miriam Sterling, Homeowner</div>
                 </div>
             </div>
         </div>
@@ -223,6 +201,6 @@
 
         </div>
     </footer>
-    <script src="js/gallery.js"></script>
+    <script src="js/review.js"></script>
 </body>
 </html>
