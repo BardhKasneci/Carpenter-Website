@@ -105,7 +105,7 @@ body{
     font-family: var(--header-font);
     font-size: 4.8rem;
     line-height: 1.1;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .hero-content p{
@@ -131,8 +131,9 @@ body{
 .hero-buttons a{
     padding: 20px 40px;
     text-decoration: none;
-    font-size: 20px;
-    font-weight: 700;
+    font-family: var(--body-font);
+    font-size: 18px;
+    font-weight: 600;
     transition: 0.3s;
 }
 
@@ -391,41 +392,40 @@ body{
 }   
 
 .cta-section {
-    background-color: var(--secondary-color); /* Dark charcoal background matching the image */
+    background-color: var(--secondary-color); 
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 500px; /* Adjust height based on where you use it */
+    min-height: 500px; 
     padding: 80px 24px;
     font-family: 'Inter', sans-serif;
     text-align: center;
 }
 
 .cta-container {
-    max-width: 720px; /* Keeps the text contained and readable */
+    max-width: 720px; 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Section Header Typography */
 .cta-heading {
     font-family: 'Playfair Display', serif;
     color: #ffffff;
-    font-size: 3.8rem; /* Large serif headline */
+    font-size: 3.8rem; 
     font-weight: 700;
     letter-spacing: -0.5px;
     margin-bottom: 24px;
 }
 
-/* Subtext Typography */
+
 .cta-subtext {
     color: #cccccc;
     font-size: 1.1rem;
     line-height: 1.6;
     font-family: var(--body-font);
     font-weight: 400;
-    max-width: 650px; /* Constrains the width to match line-breaks */
+    max-width: 650px; 
     margin-bottom: 40px;
 }
 

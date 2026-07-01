@@ -71,7 +71,7 @@ body{
     align-items: start;
     text-align: center;
     justify-content: center;
-    padding: 0 3%;
+    padding: 0 7%;
     margin-top: 50px;
     margin-bottom: 20px;
 }
@@ -107,7 +107,7 @@ body{
 .service-header span{
     color: var(--primary-color);
     font-family: var(--body-font);
-    font-size: 17px;
+    font-size: 1.1rem;
     letter-spacing: 4px;
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -128,7 +128,7 @@ body{
 }
 
 .nav-item {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 500;
     text-decoration: none;
     color: #767471;
@@ -221,7 +221,7 @@ body{
 .cta-section {
     width: 100%;
     padding: 140px 40px; 
-    background-color: var(--white);
+    background-color: #f1f1f1;
     display: flex;
     justify-content: center;
     align-items: center;
