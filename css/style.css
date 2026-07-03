@@ -188,14 +188,15 @@ body{
 }
 
 .stat-item .stat-number {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 600;
-    color: #0c1c24;
+    font-family: var(--body-font);
+    color: var(--primary-color);
     margin-bottom: 4px;
 }
 
 .stat-item .stat-label {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: #888888;
@@ -225,14 +226,12 @@ body{
 .about-image{
     min-height: auto;
     width: 45%;
-    border-radius: 16px;
     object-fit: contain;
     overflow: hidden;
 }
 
 .about-image img{
     width: 100%;
-    border-radius: 16px;
     transition: transform 0.5s, filter 0.3s;
 }
 
@@ -323,7 +322,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     margin-right: 5px;
 }
 
@@ -482,7 +481,7 @@ body{
 }
 
 .cta-heading {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--header-font);
     color: #ffffff;
     font-size: 3.8rem; 
     font-weight: 700;

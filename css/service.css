@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+#kitchen, #bedroom, #office{
+    scroll-margin-top: 100px;
+}
+
 body{
     background-color: var(--white);
 }
